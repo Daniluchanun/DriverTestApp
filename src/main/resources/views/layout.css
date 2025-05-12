@@ -1,0 +1,28 @@
+.logo-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.sidebar {
+    -fx-background-color: #e8e8e8;
+    -fx-padding: 20 10;
+    -fx-spacing: 10;
+}
+
+.sidebar-button {
+    -fx-background-color: #121212;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 10px;
+    -fx-padding: 8 12;
+}
+
+.sidebar-button.active {
+    -fx-background-color: #2a2a2a;
+}

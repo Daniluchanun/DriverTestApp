@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.TopicsController"
+      spacing="20"
+      alignment="TOP_CENTER"
+      stylesheets="@topics.css">
+
+    <VBox fx:id="themes" spacing="10" alignment="TOP_CENTER">
+        <padding>
+            <Insets top="20" bottom="20" left="20" right="20"/>
+        </padding>
+    </VBox>
+
+    <Label text="Оберіть тему" styleClass="heading-label"/>
+
+    <ScrollPane fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+        <content>
+            <VBox fx:id="themesBox"
+                  spacing="12"
+                  alignment="TOP_CENTER"
+                  prefWidth="600"
+                  style="-fx-padding: 10 0 30 0;"/>
+        </content>
+    </ScrollPane>
+
+</VBox>

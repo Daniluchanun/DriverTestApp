@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.ResultController"
+      spacing="30"
+      alignment="CENTER"
+      stylesheets="@main.css">
+
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50"/>
+    </padding>
+
+    <Label fx:id="titleLabel" text="Результати тесту" styleClass="question-text"/>
+
+    <Label fx:id="summaryLabel" text="Ви відповіли правильно на 18 з 20" styleClass="summary-label"/>
+
+    <Label fx:id="timeLabel" text="Час проходження: 03:21" styleClass="summary-label"/>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Повернутись на головну" onAction="#goHome" styleClass="next-button"/>
+        <Button text="Переглянути помилки" onAction="#reviewMistakes" styleClass="back-button"/>
+    </HBox>
+</VBox>

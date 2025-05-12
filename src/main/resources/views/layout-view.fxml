@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="rootPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.LayoutController"
+            stylesheets="@layout.css">
+
+    <left>
+        <VBox fx:id="sidebar" styleClass="sidebar" spacing="10">
+            <HBox alignment="CENTER">
+                <ImageView fx:id="logoImage" fitHeight="40" fitWidth="40"/>
+            </HBox>
+
+
+            <Button fx:id="homeButton" onAction="#goHome" styleClass="sidebar-button" text="Головна"/>
+            <Button fx:id="topicsButton" onAction="#goTopics" styleClass="sidebar-button" text="Теми"/>
+            <Button fx:id="mistakesButton" onAction="#goMistakes" styleClass="sidebar-button" text="Помилки"/>
+
+            <Pane VBox.vgrow="ALWAYS"/> <!-- Відсуває кнопку вниз -->
+            <Button fx:id="profileButton" onAction="#goProfile" styleClass="sidebar-button" text="Профіль"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentPane"/>
+    </center>
+</BorderPane>

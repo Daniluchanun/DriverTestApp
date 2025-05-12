@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="25" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MainController"
+      stylesheets="@main.css">
+
+    <padding>
+        <Insets top="25" right="35" bottom="25" left="35"/>
+    </padding>
+
+    <!-- Таймер -->
+    <Label fx:id="timerLabel" text="Час: 00:00" styleClass="timer-label"/>
+
+    <!-- Плитки питань -->
+    <ScrollPane fx:id="questionScroll"
+                fitToHeight="true"
+                fitToWidth="true"
+                hbarPolicy="AS_NEEDED"
+                vbarPolicy="NEVER"
+                prefHeight="80"
+                maxHeight="80"
+                minHeight="80">
+    <HBox fx:id="questionTiles" spacing="10" alignment="CENTER" styleClass="tiles-container">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </HBox>
+    </ScrollPane>
+
+    <!-- Питання і картинка -->
+    <HBox spacing="40" alignment="CENTER" styleClass="question-block">
+        <VBox spacing="15" alignment="TOP_LEFT" maxWidth="700">
+            <Label fx:id="questionLabel" wrapText="true" styleClass="question-text"/>
+            <VBox fx:id="optionsBox" spacing="12" styleClass="options-box"/>
+        </VBox>
+
+        <ImageView fx:id="questionImage" fitWidth="300" preserveRatio="true"/>
+    </HBox>
+
+    <!-- Кнопка наступного питання -->
+    <Button text="Наступне питання" onAction="#nextQuestion" styleClass="next-button"/>
+</VBox>

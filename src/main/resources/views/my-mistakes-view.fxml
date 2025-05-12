@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="15" alignment="TOP_LEFT" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MyMistakesController"
+      stylesheets="@my-mistakes.css">
+
+    <Label text="Мої помилки" styleClass="heading-label" />
+
+    <ListView fx:id="mistakeListView" prefWidth="600" prefHeight="400"/>
+
+    <Button text="← Назад до меню" onAction="#handleBack" />
+</VBox>

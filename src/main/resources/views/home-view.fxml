@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.HomeController"
+      stylesheets="@home.css">
+
+    <padding>
+        <Insets top="40" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Обери режим навчання:" styleClass="heading-label"/>
+
+    <FlowPane hgap="20" vgap="20" alignment="CENTER">
+        <Button text="Іспит як в СЦ" onAction="#startExamMode" prefWidth="200" prefHeight="100"/>
+        <Button text="Вчити по темах" onAction="#startTopicsMode" prefWidth="200" prefHeight="100"/>
+        <Button text="Випадкові 20 питань" onAction="#startPracticeMode" prefWidth="200" prefHeight="100"/>
+        <Button text="Мої помилки" onAction="#startMistakesMode" prefWidth="200" prefHeight="100"/>
+        <Button text="Збережені питання" onAction="#startSavedMode" prefWidth="200" prefHeight="100"/>
+    </FlowPane>
+</VBox>

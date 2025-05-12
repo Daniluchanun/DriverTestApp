@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.LoginController"
+      stylesheets="@login.css">
+
+    <padding>
+        <Insets top="40" bottom="40" left="20" right="20"/>
+    </padding>
+
+    <Label text="Вхід / Реєстрація" styleClass="heading-label"/>
+
+    <TextField fx:id="emailField" promptText="Email" prefWidth="250"/>
+    <PasswordField fx:id="passwordField" promptText="Пароль" prefWidth="250"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Увійти" onAction="#handleLogin"/>
+        <Button text="Зареєструватись" onAction="#handleRegister"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" textFill="red"/>
+
+</VBox>
