@@ -35,14 +35,12 @@ public class LoginController {
             String response = authService.login(email, password);
             System.out.println("Login success: " + response);
 
-            // ✅ Зберігаємо сесію
             AuthContext.getInstance().setSession(
                     authService.getUserId(),
                     email,
                     authService.getAccessToken()
             );
 
-            // ✅ Переходимо на головну
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/home-view.fxml"));
             Stage stage = (Stage) emailField.getScene().getWindow();
             stage.setScene(new Scene(loader.load()));

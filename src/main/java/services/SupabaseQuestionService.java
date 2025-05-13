@@ -64,7 +64,7 @@ public class SupabaseQuestionService {
                     allQuestions.add(new Question(id, text, options, correct, theme, img));
                 }
 
-                if (rawList.size() < pageSize) break; // кінець записів
+                if (rawList.size() < pageSize) break;
                 offset += pageSize;
             }
 

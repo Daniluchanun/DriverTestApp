@@ -72,6 +72,7 @@
 .question-text {
     -fx-font-size: 18px;
     -fx-font-weight: bold;
+    -fx-wrap-text: true;
 }
 
 .options-box .radio-button {
@@ -79,7 +80,6 @@
     -fx-padding: 5 0 5 0;
 }
 
-/* Загальний стиль плитки */
 .question-tile {
     -fx-background-color: white;
     -fx-border-color: black;
@@ -91,12 +91,10 @@
     -fx-min-height: 40;
 }
 
-/* Наведення миші */
 .question-tile:hover {
     -fx-background-color: #f0f0f0;
 }
 
-/* Активна (обрана) плитка */
 .question-tile.active-tile {
     -fx-background-color: #000000;
     -fx-text-fill: white;
@@ -104,7 +102,6 @@
     -fx-border-radius: 10;
 }
 
-/* Правильна */
 .question-tile.correct-tile {
     -fx-background-color: #4CAF50;
     -fx-text-fill: white;
@@ -112,7 +109,6 @@
     -fx-border-radius: 10;
 }
 
-/* Неправильна */
 .question-tile.wrong-tile {
     -fx-background-color: #F44336;
     -fx-text-fill: white;

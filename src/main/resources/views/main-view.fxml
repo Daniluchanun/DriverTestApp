@@ -14,10 +14,8 @@
         <Insets top="25" right="35" bottom="25" left="35"/>
     </padding>
 
-    <!-- Таймер -->
     <Label fx:id="timerLabel" text="Час: 00:00" styleClass="timer-label"/>
 
-    <!-- Плитки питань -->
     <ScrollPane fx:id="questionScroll"
                 fitToHeight="true"
                 fitToWidth="true"
@@ -33,7 +31,6 @@
         </HBox>
     </ScrollPane>
 
-    <!-- Питання і картинка -->
     <HBox spacing="40" alignment="CENTER" styleClass="question-block">
         <VBox spacing="15" alignment="TOP_LEFT" maxWidth="700">
             <Label fx:id="questionLabel" wrapText="true" styleClass="question-text"/>
@@ -43,6 +40,5 @@
         <ImageView fx:id="questionImage" fitWidth="300" preserveRatio="true"/>
     </HBox>
 
-    <!-- Кнопка наступного питання -->
     <Button text="Наступне питання" onAction="#nextQuestion" styleClass="next-button"/>
 </VBox>

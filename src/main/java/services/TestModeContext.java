@@ -7,8 +7,8 @@ import java.util.List;
 
 public class TestModeContext {
     public enum Mode {
-        EXAM,      // Іспит як в СЦ (2 помилки)
-        PRACTICE,   // Просто практика (будь-яка кількість помилок)
+        EXAM,
+        PRACTICE,
         MISTAKES,
         FAVORITES,
         FREQUENT,
@@ -16,7 +16,7 @@ public class TestModeContext {
     }
 
     private static TestModeContext instance;
-    private Mode mode = Mode.EXAM; // За замовченням
+    private Mode mode = Mode.EXAM;
     private List<Question> customQuestions;
     private TestModeContext() {}
 

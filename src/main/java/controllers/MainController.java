@@ -159,6 +159,7 @@ public class MainController {
 
             for (int i = 0; i < q.getOptions().size(); i++) {
                 ToggleButton tb = new ToggleButton(q.getOptions().get(i));
+                tb.setWrapText(true);
                 tb.setUserData(i);
                 tb.setToggleGroup(optionsGroup);
                 tb.getStyleClass().add("answer-button");
